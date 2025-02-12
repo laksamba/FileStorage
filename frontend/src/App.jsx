@@ -70,8 +70,8 @@ const contractABI =  [
   }
 ];
 
-const PINATA_API_KEY = "14f97ec9d2df0392729b";  
-const PINATA_SECRET_KEY = "14614cabf105339cbb428b5eb79b13dd8bb9deb8c2305402db63c833f263c251";  
+const PINATA_API_KEY = import.meta.env.VITE_API_KEY; 
+const PINATA_SECRET_KEY = import.meta.env.VITE_SECRET_KEY;  
 
 function App() {
   const [fileHash, setFileHash] = useState("");
